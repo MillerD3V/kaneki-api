@@ -1,0 +1,27 @@
+{
+  "name": "kaneki-api",
+  "version": "1.0.0",
+  "description": "Выдаёт некоторую инфу с апи",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MillerD3V/kaneki-api.git"
+  },
+  "keywords": [
+    "api",
+    "kaneki",
+    "request"
+  ],
+  "author": "MillerD3V",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MillerD3V/kaneki-api/issues"
+  },
+  "homepage": "https://github.com/MillerD3V/kaneki-api#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
