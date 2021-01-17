@@ -1,4 +1,4 @@
-const fetch = require('../src/fetch.js');
+const fetch = require('./src/fetch.js');
 const endpoints = require('./src/endpoints')
 
 exports.cry = async function() {
