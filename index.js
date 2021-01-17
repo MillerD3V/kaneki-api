@@ -16,7 +16,7 @@ exports.naruto = async function(number) {
     return kaneka;
 };
 
-exports.clever = async function(string) {
-    let kaneka = await fetch(endpoints.kaneki.url + `clever`, {json: { query: string } })
-    return { message: kaneka.message, context: kaneka.contexts};
+exports.clever = async function(string, contexts = []) {
+    let kaneka = await fetch(endpoints.kaneki.url + `clever`, {body: { query: string, contexts } });
+    return kaneka
 };

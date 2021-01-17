@@ -1,6 +1,6 @@
 {
   "name": "kaneki-api",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "Выдаёт некоторую инфу с апи",
   "main": "index.js",
   "scripts": {
