@@ -1,6 +1,6 @@
 {
   "name": "kaneki-api",
-  "version": "1.1.0", 
+  "version": "1.1.1",
   "description": "Выдаёт некоторую инфу с апи",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
   "keywords": [
     "api",
     "kaneki",
-    "node-fetch"
+    "https"
   ],
   "author": "MillerD3V",
   "license": "MIT",
@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/MillerD3V/kaneki-api#readme",
   "dependencies": {
-    "node-fetch": "^2.6.1"
+    "https": "^1.0.0"
   }
 }
