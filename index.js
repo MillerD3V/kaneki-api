@@ -20,3 +20,8 @@ exports.clever = async function(string, contexts = []) {
     let kaneka = await fetch(endpoints.kaneki.url + `clever`, {body: { query: string, contexts } });
     return kaneka
 };
+
+exports.hedgehog = async function() {
+    let kaneka = await fetch(endpoints.kaneki.url + 'hedgehog')
+    return { url: kaneka.url };
+};
