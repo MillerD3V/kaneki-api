@@ -1,4 +1,4 @@
-const fetch = require('node-fetch');
+const fetch = require('../src/fetch.js');
 const endpoints = require('./src/endpoints')
 
 exports.cry = async function() {
@@ -17,10 +17,6 @@ exports.naruto = async function(number) {
 };
 
 exports.clever = async function(string) {
-    let kaneka = await fetch(endpoints.kaneki.url + `clever`, {
-        method: 'POST',
-        body:  JSON.stringify({ query: string }),
-        headers: { 'content-type': 'application/json' }
-    }).then(r=> r.json())
+    let kaneka = await fetch(endpoints.kaneki.url + `clever`, {json: { query: string } }).then(r=> r.json())
     return { message: kaneka.message, context: kaneka.contexts};
 };
